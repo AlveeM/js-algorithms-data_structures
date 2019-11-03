@@ -17,3 +17,19 @@ function inception2() {
 
 console.log(inception()); // undefined
 console.log(inception2()); // 'done'
+
+function collectOddValues(arr) {
+    let result = []
+
+    function helper(helperInput) {
+        if (helperInput.length === 0) {
+            return;
+        }
+
+        if (helperInput[0] % 2 !=== 0) {
+            result.push(helperInput[0]);
+        }
+
+        helper(helperInput.slice(1));
+    }
+}
