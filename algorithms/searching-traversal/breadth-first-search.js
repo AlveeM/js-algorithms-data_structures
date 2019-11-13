@@ -173,9 +173,9 @@ tree.insert(1)
 console.log(tree.breadthFirstSearch());
 console.log(tree.breadthFirstSearchR([tree.root], []));
 
-//     9
-//  4     20
-//1  6  15  170
+//      9
+//   4     20
+// 1  6  15  170
 
 function traverse(node) {
     const tree = {

@@ -17,19 +17,19 @@ function mergeSort (arr) {
 
 function merge(left, right){
     const result = [];
-    let leftIndex = 0;
-    let rightIndex = 0;
-    while (leftIndex < left.length && rightIndex < right.length) {
-        if (left[leftIndex] < right[rightIndex]) {
-            result.push(left[leftIndex]);
-            leftIndex++;
+    let leftIdx = 0;
+    let rightIdx = 0;
+    while (leftIdx < left.length && rightIdx < right.length) {
+        if (left[leftIdx] < right[rightIdx]) {
+            result.push(left[leftIdx]);
+            leftIdx++;
         } else {
-            result.push(right[rightIndex]);
-            rightIndex++;
+            result.push(right[rightIdx]);
+            rightIdx++;
         }
     }
 
-    return result.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+    return result.concat(left.slice(leftIdx)).concat(right.slice(rightIdx));
 }
 
 const result = mergeSort(numbers);
