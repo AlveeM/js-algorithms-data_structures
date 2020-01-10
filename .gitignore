@@ -60,7 +60,5 @@ typings/
 # next.js build output
 .next
 
-# excluded js files
-test.js
-test2.js
-test3.js
+# excluded directories (custom)
+playground
