@@ -113,6 +113,22 @@ class SinglyLinkedList {
         return true;
     }
 
+    remove(index) {
+        if (index < 0 || index >= this.length) return false;
+        if (index === 0) {
+            return this.shift();
+        }
+        if (index === this.length - 1) {
+            return this.pop();
+        }
+
+        let prevNode = this.get(index - 1);
+        let removed = previousNode.next;
+        previousNode.next = removed.next;
+
+        return removed;
+    }
+
     traverse() {
         let current = this.head;
         while (current) {
