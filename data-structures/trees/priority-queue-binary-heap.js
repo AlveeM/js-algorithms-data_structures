@@ -69,6 +69,7 @@ class PriorityQueue {
 
             this.values[index] = this.values[swap];
             this.values[swap] = element;
+            index = swap;
         }
     }
 }
