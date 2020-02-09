@@ -1,9 +1,9 @@
-const printPascal = testVariable => {
-    if (testVariable === 0) {
+const printPascal = row => {
+    if (row === 0) {
         return [1];
     } else {
         var result = [1];
-        previousResult = printPascal(testVariable - 1);
+        previousResult = printPascal(row - 1);
 
         for (let i = 0; i < previousResult.length - 1; i++) {
             result.push(previousResult[i] + previousResult[i + 1]);
@@ -13,5 +13,5 @@ const printPascal = testVariable => {
     return result;
 }
 
-const testVariable = 5;
-console.log(printPascal(testVariable));
+const row = 5;
+console.log(printPascal(row));

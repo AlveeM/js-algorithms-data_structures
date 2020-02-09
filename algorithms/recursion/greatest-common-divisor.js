@@ -1,16 +1,16 @@
-const gcd = (testVariable1, testVariable2) => {
-    if (testVariable1 === testVariable2) {
-        return testVariable1;
+const gcd = (num1, num2) => {
+    if (num1 === num2) {
+        return num1;
     }
 
-    if (testVariable1 > testVariable2) {
-        return gcd(testVariable1 - testVariable2, testVariable2);
+    if (num1 > num2) {
+        return gcd(num1 - num2, num2);
     } else {
-        return gcd(testVariable1, testVariable2 - testVariable1);
+        return gcd(num1, num2 - num1);
     }
 }
 
-let testVariable1 = 6;
-let testVariable2 = 9;
+let num1 = 6;
+let num2 = 9;
 
-console.log(gcd(testVariable1, testVariable2));
+console.log(gcd(num1, num2));

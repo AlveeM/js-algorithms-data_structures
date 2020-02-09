@@ -1,10 +1,9 @@
-const decimalToBinary = testVariable => {
-    if (testVariable <= 1) {
-        return String(testVariable);
+const decimalToBinary = num => {
+    if (num <= 1) {
+        return String(num);
     } else  {
-        return decimalToBinary(Math.floor(testVariable / 2)) + decimalToBinary(testVariable % 2);
+        return decimalToBinary(Math.floor(num / 2)) + decimalToBinary(num % 2);
     }
 }
 
-const testVariable = 11;
 console.log(decimalToBinary(11));

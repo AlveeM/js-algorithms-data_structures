@@ -1,11 +1,11 @@
-const removeDuplicates = string => {
-    if (string <= 1) {
-        return string;
-    } else if (string[0] === string[1]) {
-        return removeDuplicates(string.substr(1));
+const removeDuplicates = str => {
+    if (str <= 1) {
+        return str;
+    } else if (str[0] === str[1]) {
+        return removeDuplicates(str.substr(1));
     }
 
-    return string[0] + removeDuplicates(string.substr(1));
+    return str[0] + removeDuplicates(str.substr(1));
 }
 
 console.log(removeDuplicates("heello"));

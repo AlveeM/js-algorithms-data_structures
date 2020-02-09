@@ -1,8 +1,8 @@
-const findSquare = testVariable => {
-    if (testVariable === 0) {
+const findSquare = num => {
+    if (num === 0) {
         return 0;
     } else {
-        return findSquare(testVariable - 1) + (2 * testVariable) - 1;
+        return findSquare(num - 1) + (2 * num) - 1;
     }
 }
 

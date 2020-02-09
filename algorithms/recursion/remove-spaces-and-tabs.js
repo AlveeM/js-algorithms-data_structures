@@ -1,13 +1,13 @@
-const remove = (string) => {
-    if (string.length === 0) {
+const remove = str => {
+    if (str.length === 0) {
         return "";
     }
-    if (string[0] === "\t" || string[0] === " ") {
-        return remove(string.substring(1));
+    if (str[0] === "\t" || str[0] === " ") {
+        return remove(str.substring(1));
     } else {
-        return string[0] + remove(string.substring(1));
+        return str[0] + remove(str.substring(1));
     }
 }
 
-const string = "hello world";
-console.log(remove(string));
+const str = "hello world";
+console.log(remove(str));
