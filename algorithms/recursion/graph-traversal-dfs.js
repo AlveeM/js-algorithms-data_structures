@@ -17,8 +17,6 @@ const helperFunction = (myGraph, currentNode, visited) => {
 
 const DFS = myGraph => {
     let visited = new Array(myGraph.vertices).fill(false);
-    console.log(myGraph);
-    console.log("\n" + visited + "\n");
     helperFunction(myGraph, 0, visited);
 }
 
